@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>42Shop</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+	
+	<nav>
+		<img src="images/logo.jpeg" alt="">
+		<h1>42Shop</h1>
+		<h2>42Lisboa Oficial Store</h2>
+	</nav>
+
+	<section class="search">
+		<div class="search-container">
+			<input type="text" class="pesquisa" id="search" placeholder="Search..." />
+
+			<select name="categories" id="categories" class="categories">
+				<option value="None">--None--</option>
+				<option value="clothes">Clothes</option>
+				<option value="accessories">Accessories</option>
+				<option value="equipment">Equipment</option>
+			</select> 
+			
+			<button class="search-button">Find It!</button>
+		</div>
+	</section>
+
+	<section class="order">
+		<select name="order-opt" id="order-opt" class="order-opt">
+			<option value="None">--Ordering--</option>
+			<option value="asc-price">Ascendent Price</option>
+			<option value="des-price">Descendent Price</option>
+			<option value="alpha">Alphabetical Order</option>
+			<option value="rating">Rating</option>
+		</select> 
+	</section>
+
+	<div class="products">
+		<div class="services">
+			<div class="max-width">
+				<div id="container" class="services-cont">
+					<!-- <div class="card">
+						<div class="box">
+							<img src="images/sweat.jpeg" alt="">
+							<h3>Sweatshirt</h3>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="images/sweat.jpeg" alt="">
+							<h3>Sweatshirt</h3>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="images/sweat.jpeg" alt="">
+							<h3>Sweatshirt</h3>
+						</div>
+					</div>
+					<div class="card">
+						<div class="box">
+							<img src="images/sweat.jpeg" alt="">
+							<h3>Sweatshirt</h3> 
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <form id="form" action="/" method="post">
+		<div>
+			Product Name: <input id="prodName" type="text" name="ProductName" required>
+			Category: <input id="category" type="text" name="Category" required>
+			Description: <input id="description" type="text" name="Description" required>
+			Price: <input id="price" type="text" name="Price" required>
+			img: <input id="image" type="file" name="img" required>
+			<input type="submit" value="Add Item" required>
+		</div>
+	</form> -->
+	<!-- <button onclick="postData('http:\/\/localhost:3000/api/v1/mail')">ADD ITEM</button> -->
+	<script src="index.js"></script>
+
+
+</body>
+</html>

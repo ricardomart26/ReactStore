@@ -1,0 +1,82 @@
+
+.products{
+    position: relative;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.services {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+
+.services-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: calc(26% - 20px);
+    border-radius: 6px;
+    background: rgb(247, 241, 241);
+    text-align: center;
+    user-select: none;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.card:hover{
+    background-color: rgba(20, 235, 188, 0.788);
+    color: white;
+}
+
+.box {
+    transition: all 0.3s ease;
+    padding: 50px 25px;
+}
+
+.card:hover .box {
+    transform: scale(1.05);
+}
+
+.card:hover .box i {
+    color: white;
+}
+
+.box h3 {
+    font-size: 20px;
+    padding: 10px 0 7px;
+    text-decoration: none;
+    color: black;
+}
+
+.box img {
+    margin: 0 auto;
+
+    width: 50%;
+}
+
+@media screen and (max-width:1190px) {
+    .max-width {
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .card {
+        width: 100%;
+    }
+}
